@@ -11,6 +11,10 @@ const Add = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [task, setTask] = useState([]);
 
+  const deleteTask = (e) => {
+    navigate(`/delete/${id}`);
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     let formData = new FormData(e.target),
@@ -113,6 +117,8 @@ const Add = () => {
                     <button type={"submit"}>Add Task</button>
                     
                   </form>
+                  <hr/><br/><hr/>
+                  <button className={"delete"} onClick={(e) => deleteTask(e)}>Delete Task</button>
               </div>
           </div>
       );
