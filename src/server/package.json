@@ -1,0 +1,37 @@
+{
+  "name": "guildtasks",
+  "version": "1.0.0",
+  "description": "**Guild Tasks**",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "dbsetup:local": "NODE_ENV=local sequelize db:migrate && sequelize db:seed",
+    "db:seed:local": "SET NODE_ENV=local sequelize db:seed:all",
+    "db:migrate:local": "SET NODE_ENV=local sequelize db:migrate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bent": "^7.3.12",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "moleculer": "^0.14.21",
+    "moleculer-db": "^0.8.18",
+    "moleculer-db-adapter-sequelize": "^0.2.14",
+    "moleculer-repl": "^0.7.1",
+    "moleculer-web": "^0.10.4",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.21.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "sequelize-cli": "^6.2.0",
+    "touch": "^3.1.0",
+    "touch-cli": "0.0.1"
+  }
+}
