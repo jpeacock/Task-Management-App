@@ -25,3 +25,6 @@ There are some obvious things that are missing, such as
 - React components could be better separated to keep it more DRY. At the moment the edit and add states use very similar forms. 
 - Dockerize everything to make it easier to spin up. 
 - Sorting has some wonkiness. It doesn't toggle sort directions when you click the headers a second time. Ironing out that logic would help. 
+
+https://user-images.githubusercontent.com/223784/221375393-62f6a142-10ec-4af8-a78e-50014a67950f.mp4
+
