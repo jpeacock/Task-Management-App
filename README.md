@@ -26,3 +26,4 @@ There are some obvious things that are missing, such as
 - React components could be better separated to keep it more DRY. At the moment the edit and add states use very similar forms. 
 - Dockerize everything to make it easier to spin up. 
 - Sorting has some wonkiness. It doesn't toggle sort directions when you click the headers a second time. Ironing out that logic would help. 
+- There's no env config used. I hard coded values for my local PostgreSQL instance, but in a real world scenario these would be out of the repo. 
